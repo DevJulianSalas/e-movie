@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "antd": "^4.13.0",
-    "i": "^0.3.6",
     "mongodb": "^3.6.4",
     "next": "10.0.7",
     "next-connect": "^0.10.1",
