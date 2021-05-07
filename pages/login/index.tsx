@@ -1,4 +1,4 @@
-import { React } from "react";
+import React  from "react";
 import { Row, Col, Layout } from 'antd';
 
 import styles from './loginpage.module.scss'

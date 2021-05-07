@@ -1,9 +1,14 @@
-import { connectToDb } from '../db/'
-import { Request, Response } from '../types'
+import { connectToDb } from '../db/';
 
+declare global {
+  namespace NodeJS {
+    interface Global {
+      mongo: any
+    }
+  }
+}
 
-
-export default async function(req: Request,  res: Response) {
+export default async function(req, res) {
   const { db, dbClient } = await connectToDb()
   req.db = db;
   req.dbClient = dbClient;

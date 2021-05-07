@@ -5,9 +5,6 @@ import { Button, Row, Col } from 'antd';
 import { useRouter } from 'next/router'
 
 
-import brandLogo from '../../public/vercel.svg'
-import Image from "next/image";
-
 //styles
 import styles from './NavBar.module.scss';
 
@@ -17,8 +14,8 @@ export default function NavBar() {
   return (
     <>
       <Header className={styles.navbar}>
-        <Row  justify="start">
-          <Col span={22}>
+        <Row>
+          <Col>
             <p>logo</p>
           </Col>
           <Col>
